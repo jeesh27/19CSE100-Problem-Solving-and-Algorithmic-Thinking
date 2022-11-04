@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22032"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:41:38 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMjsyMDIyMjNNQVlDMDA2OTsyMDIyLTExLTA0OzExOjM2OjQ2IEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMjsyMDIyMjNNQVlDMDA2OTsyMDIyLTExLTA0OzExOjQxOjM4IEFNOzE7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividend, divisor, qoutient, remainder" type="Integer" array="False" size=""/>
+            <output expression="&quot;dividend&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <output expression="&quot;divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <output expression="&quot;qoutient&quot;" newline="True"/>
+            <input variable="qoutient"/>
+            <assign variable="remainder" expression="dividend-(divisor*qoutient)"/>
+            <output expression="remainder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
