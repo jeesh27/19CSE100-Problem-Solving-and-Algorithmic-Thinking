@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22032"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:05:18 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMjsyMDIyMjNNQVlDMDA2OTsyMDIyLTExLTA0OzA5OjA3OjIyIEFNOzMwNjI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMjsyMDIyMjNNQVlDMDA2OTsyMDIyLTExLTA0OzExOjA1OjE4IEFNOzI7MzE2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius" type="Real" array="False" size=""/>
+            <output expression="&quot;celsius&quot;" newline="True"/>
+            <input variable="celsius"/>
+            <declare name="farenheit" type="Real" array="False" size=""/>
+            <assign variable="farenheit" expression="9/5*celsius+32"/>
+            <output expression="farenheit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
