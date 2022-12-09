@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lalit"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:21:49 AM"/>
+        <attribute name="created" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA2OzAyOjM2OjE2IFBNOzIzMjI="/>
+        <attribute name="edited" value="bGFsaXQ7TEFMSVRIQTsyMDIyLTEyLTA2OzAyOjQ4OjQwIFBNOzI7MjQzMQ=="/>
+        <attribute name="edited" value="SkVFU0hJVEhBO0RFU0tUT1AtSTQzVlROVjsyMDIyLTEyLTA5OzEwOjIxOjQ5IEFNOzM7MzEyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="True" size="10"/>
+            <comment text="declared the variables i and array as 10"/>
+            <assign variable="i" expression="0"/>
+            <comment text="assigned i=0"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="i" expression="0"/>
+            <comment text="assigned i=0 again for second loop"/>
+            <output expression="&quot;the array is&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;a&quot;&amp;&quot;[&quot;&amp; i &amp;&quot;]&quot;&amp;&quot;=&quot;&amp;a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
