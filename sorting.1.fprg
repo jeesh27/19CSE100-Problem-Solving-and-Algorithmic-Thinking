@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22032"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:03:33 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMjsyMDIyMjNNQVlDMDA1MjsyMDIzLTAxLTIwOzA5OjA2OjA3IEFNOzMwNTQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMjsyMDIyMjNNQVlDMDA1MjsyMDIzLTAxLTIwOzEwOjAzOjMzIEFNOzE7MzE1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, n, smallest" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="group" type="Integer" array="True" size="n"/>
+            <for variable="x" start="0" end="n-1" direction="inc" step="1">
+                <input variable="group[x]"/>
+            </for>
+            <assign variable="smallest" expression="group[0]"/>
+            <for variable="y" start="0" end="n-1" direction="inc" step="1">
+                <for variable="x" start="y+1" end="n-1" direction="inc" step="1">
+                    <if expression="group[x]&lt;group[y]">
+                        <then>
+                            <assign variable="smallest" expression="group[x]"/>
+                            <assign variable="group[x]" expression="group[y]"/>
+                            <assign variable="group[y]" expression="smallest"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="x" start="0" end="n-1" direction="inc" step="1">
+                <output expression="group[x]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
